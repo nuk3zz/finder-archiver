@@ -17,6 +17,8 @@ A small native macOS interface for the official 7-Zip command-line engine. It wo
 
 You can also open the app and choose or drop files into its window. The window allows archive commands on files with unfamiliar extensions. This version has no password-entry interface.
 
+The first time a command touches a protected location such as Documents or Downloads, macOS may ask whether Finder Archiver can access that location. The command waits for your choice.
+
 Finder can omit extension menus in locations managed by another extension or in special Finder views. The main app still works with files you select there.
 
 ## Build locally
