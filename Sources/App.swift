@@ -30,9 +30,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         main.addItem(appItem)
         let appMenu = NSMenu()
         appItem.submenu = appMenu
-        appMenu.addItem(withTitle: "About Finder Archiver", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "")
+        appMenu.addItem(withTitle: "About 7zip", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "")
         appMenu.addItem(.separator())
-        appMenu.addItem(withTitle: "Quit Finder Archiver", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+        appMenu.addItem(withTitle: "Quit 7zip", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         let edit = NSMenuItem()
         main.addItem(edit)
         let editMenu = NSMenu(title: "Edit")
@@ -64,7 +64,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         if window == nil {
             let controller = NSHostingController(rootView: ArchiveView(model: model))
             let window = NSWindow(contentViewController: controller)
-            window.title = "Finder Archiver"
+            window.title = "7zip"
             window.setContentSize(NSSize(width: 660, height: 475))
             window.contentMinSize = NSSize(width: 560, height: 420)
             window.isReleasedWhenClosed = false
@@ -174,7 +174,7 @@ struct ArchiveView: View {
                     .foregroundStyle(.tint)
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Finder Archiver").font(.title2.bold())
+                    Text("7zip").font(.title2.bold())
                     Text("Powered by 7‑Zip").foregroundStyle(.secondary)
                 }
                 Spacer()

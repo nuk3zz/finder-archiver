@@ -4,13 +4,13 @@ from pathlib import Path
 
 contents = Path(sys.argv[1])
 minimum = sys.argv[2]
-name = "Finder Archiver"
+name = "7zip"
 identifier = "com.finderarchiver.mac"
 common = {
     "CFBundleName": name,
     "CFBundleSupportedPlatforms": ["MacOSX"],
-    "CFBundleShortVersionString": "0.1.0",
-    "CFBundleVersion": "1",
+    "CFBundleShortVersionString": "0.1.1",
+    "CFBundleVersion": "2",
     "LSMinimumSystemVersion": minimum,
 }
 
