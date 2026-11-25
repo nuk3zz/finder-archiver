@@ -22,7 +22,7 @@ case "$arch" in
 esac
 
 build="$root/build/$arch"
-app="$build/7zip.app"
+app="$build/7zip for Mac.app"
 contents="$app/Contents"
 extension="$contents/PlugIns/FinderExtension.appex"
 mkdir -p "$build" "$contents/MacOS" "$contents/Resources" "$extension/Contents/MacOS"

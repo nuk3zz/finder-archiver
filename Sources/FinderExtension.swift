@@ -16,7 +16,7 @@ final class FinderExtension: FIFinderSync {
               let urls = FIFinderSyncController.default().selectedItemURLs(), !urls.isEmpty else { return nil }
 
         let root = NSMenu()
-        let parent = NSMenuItem(title: "7zip", action: nil, keyEquivalent: "")
+        let parent = NSMenuItem(title: "7zip for Mac", action: nil, keyEquivalent: "")
         let submenu = NSMenu()
         let archiveOnly = urls.allSatisfy(ArchiveAction.looksLikeArchive)
         if archiveOnly {
